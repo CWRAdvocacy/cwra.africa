@@ -6,12 +6,24 @@ import { Bio } from './Bio';
 const Board = () => {
   const boardBios = [
     {
-      name: 'Board One',
-      position: 'Position',
+      name: 'Suzanne',
+      position: 'Chair',
     },
     {
-      name: 'Board Two',
-      position: 'Position',
+      name: 'Sinta',
+      position: 'Treasurer',
+    },
+    {
+      name: 'Kamundia',
+      position: 'Secretary',
+    },
+    {
+      name: 'Yiantet',
+      position: 'Member',
+    },
+    {
+      name: 'Naipa',
+      position: 'Member',
     },
   ];
 
