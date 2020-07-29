@@ -30,7 +30,7 @@ export const Executive = () => {
   return (
     <Box pt={5} pb={3}>
       <Container maxWidth="md">
-        <Typography variant="h4" align="center" gutterBottom paragraph>Our Team</Typography>
+        <Typography variant="h4" align="center" gutterBottom>Our Team</Typography>
         <Grid container>
           {teamBios}
         </Grid>
