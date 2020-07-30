@@ -1,44 +1,44 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui)
+# CWRA Landing Page
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app.
+Landing page for Center for Women's Rights Advocacy (CWRA). Accessible at https://cwra.africa/
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Theme and ColorMode containers so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+Built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com)
 
-## Deploy your own
+## Development
 
-Deploy the example using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui)
-
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Clone or fork this repo to your local machine and run:
 
 ```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-# or
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/vercel/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-chakra-ui
-cd with-chakra-ui
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
 yarn
 yarn dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+## Contributing
+
+We are open to contributions!
+
+Open an [issue](https://github.com/CWRAdvocacy/cwra.africa/issues) or send a pull request.
+
+
+---
+
+## License
+
+Landing page for Center for Women's Rights Advocacy (CWRA).
+Copyright (C) 2020  Center for Women's Rights Advocacy (CWRA)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
