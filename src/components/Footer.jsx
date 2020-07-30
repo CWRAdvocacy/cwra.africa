@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Playfair Display',
     fontWeight: 'bold',
   },
+  icons: {
+    textAlign: 'center',
+  },
 }));
 
 const Footer = () => {
@@ -40,20 +43,16 @@ const Footer = () => {
                 ...
               </Typography>
             </Grid>
-            <Grid item xs={12} sm="auto">
-              <Typography align="center">
-                <IconButton href="https://facebook.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
-                  <FacebookIcon />
-                </IconButton>
-                {' '}
-                <IconButton href="https://twitter.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
-                  <TwitterIcon />
-                </IconButton>
-                {' '}
-                <IconButton href="https://www.linkedin.com/company/cwradvocacy" target="_blank" rel="noopener noreferrer">
-                  <LinkedInIcon />
-                </IconButton>
-              </Typography>
+            <Grid item xs={12} sm="auto" className={classes.icons}>
+              <IconButton href="https://facebook.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
+                <FacebookIcon />
+              </IconButton>
+              <IconButton href="https://twitter.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
+                <TwitterIcon />
+              </IconButton>
+              <IconButton href="https://www.linkedin.com/company/cwradvocacy" target="_blank" rel="noopener noreferrer">
+                <LinkedInIcon />
+              </IconButton>
             </Grid>
           </Grid>
         </Box>

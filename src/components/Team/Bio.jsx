@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Bio = ({
-  imageUrl, name, position, brief, socialUrl,
+  imageUrl, name, position, brief,
 }) => {
   const classes = useStyles();
   return (
@@ -39,7 +39,6 @@ Bio.propTypes = {
   name: PropTypes.string,
   position: PropTypes.string,
   brief: PropTypes.string,
-  socialUrl: PropTypes.object,
 };
 
 Bio.defaultProps = {
@@ -47,10 +46,6 @@ Bio.defaultProps = {
   name: '',
   position: '',
   brief: '',
-  socialUrl: {
-    linkedIn: '',
-    twitter: '',
-  },
 };
 
 export default Bio;
