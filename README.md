@@ -2,7 +2,7 @@
 
 Landing page for Center for Women's Rights Advocacy (CWRA). Accessible at https://cwra.africa/
 
-Built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com)
+Built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com).
 
 ## Development
 
@@ -22,12 +22,18 @@ We are open to contributions!
 
 Open an [issue](https://github.com/CWRAdvocacy/cwra.africa/issues) or send a pull request.
 
+### Contributors
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
+
 
 ---
 
 ## License
 
-Landing page for Center for Women's Rights Advocacy (CWRA).
+Landing page for Center for Women's Rights Advocacy (CWRA).  
 Copyright (C) 2020  Center for Women's Rights Advocacy (CWRA)
 
 This program is free software: you can redistribute it and/or modify
