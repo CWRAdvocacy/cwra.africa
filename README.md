@@ -50,7 +50,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## License
 
-Landing page for Center for Women's Rights Advocacy (CWRA).  
+Landing page for CWRA built with Next.JS and Material-UI  
 Copyright (C) 2020  Center for Women's Rights Advocacy (CWRA)
 
 This program is free software: you can redistribute it and/or modify
