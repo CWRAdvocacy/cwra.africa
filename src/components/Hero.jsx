@@ -13,7 +13,11 @@ export const Hero = () => (
       <Grid item xs={12} sm={6} md={4}>
         <Container>
           <Box py={2}>
-            <img src="/images/events/2019_09_narok/DSC_5586.jpg" style={{ maxWidth: '100%' }} alt="Narok, Sep 2019 - Session With Mums" />
+            <picture>
+              <source srcSet="/images/events/2019_09_narok/DSC_5586.webp" type="image/webp" style={{ maxWidth: '100%' }} />
+              <source srcSet="/images/events/2019_09_narok/DSC_5586.jpg" type="image/jpeg" style={{ maxWidth: '100%' }} />
+              <img src="/images/events/2019_09_narok/DSC_5586.jpg" style={{ maxWidth: '100%' }} alt="Narok, Sep 2019 - Session With Mums" />
+            </picture>
           </Box>
         </Container>
       </Grid>
