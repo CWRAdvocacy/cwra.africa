@@ -31,6 +31,22 @@ export default class MyDocument extends Document {
               `,
             }}
           />
+          {/* Google Search Structured Data */}
+          {/* https://developers.google.com/search/docs/data-types/logo */}
+          <script
+            type="application/ld+json"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: `
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "url": "https://cwra.africa/",
+                  "logo": "https://cwra.africa/images/logo/full_round.png"
+                }
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />
