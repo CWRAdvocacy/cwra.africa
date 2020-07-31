@@ -3,6 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import PropTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
+import { CwraTreeIcon } from '../icons/CwraTreeIcon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
   small: {
     width: theme.spacing(3),
     height: theme.spacing(3),
+  },
+  medium: {
+    width: theme.spacing(6),
+    height: theme.spacing(6),
   },
   large: {
     width: theme.spacing(12),
@@ -26,7 +31,9 @@ export const Bio = ({
   const classes = useStyles();
   return (
     <Box className={classes.root}>
-      <Avatar alt={name} src={imageUrl} className={classes.large}>{name}</Avatar>
+      <Avatar alt={name} src={imageUrl} className={classes.large}>
+        <CwraTreeIcon className={classes.medium} />
+      </Avatar>
       <Typography variant="h6">{name}</Typography>
       <Typography color="secondary" paragraph>{position}</Typography>
       <Typography paragraph align="center">{brief}</Typography>

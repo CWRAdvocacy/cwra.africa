@@ -10,11 +10,11 @@ const Board = () => {
       position: 'Chair',
     },
     {
-      name: 'Sinta',
+      name: 'Sintalo',
       position: 'Treasurer',
     },
     {
-      name: 'Kamundia',
+      name: 'Dr. Kamundia',
       position: 'Secretary',
     },
     {
@@ -22,7 +22,7 @@ const Board = () => {
       position: 'Member',
     },
     {
-      name: 'Naipa',
+      name: 'Naipanoi',
       position: 'Member',
     },
   ];
