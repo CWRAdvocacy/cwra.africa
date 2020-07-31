@@ -1,9 +1,9 @@
-# CWRA Landing Page
+# The Center for Women's Rights Advocacy (CWRA)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Landing page for Center for Women's Rights Advocacy (CWRA). Accessible at https://cwra.africa/
+Landing page for the Center for Women's Rights Advocacy (CWRA). Accessible at https://cwra.africa/
 
 Built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com).
 
