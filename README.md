@@ -3,7 +3,9 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Landing page for the Center for Women's Rights Advocacy (CWRA) built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com). Accessible at https://cwra.africa/
+Landing page for the Center for Women's Rights Advocacy (CWRA) built with [Next.js](https://nextjs.com/) and [Material-UI](https://material-ui.com).  
+
+Accessible at https://cwra.africa/
 
 
 ## Development
@@ -50,7 +52,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ## License
 
 Landing page for CWRA built with Next.JS and Material-UI  
-Copyright (C) 2020  Center for Women's Rights Advocacy (CWRA)
+Copyright © 2020  Center for Women's Rights Advocacy (CWRA)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
