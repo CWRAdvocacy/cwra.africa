@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import {
-  Container, Box, Grid, Typography, Link,
+  Container, Box, Grid, Typography, Link, Divider,
 } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -56,7 +56,8 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Box>
-        <Box borderTop={1} borderColor="grey.400" pt={2} pb={4} align="center">
+        <Divider />
+        <Box pt={3} pb={4} align="center">
           <Typography variant="caption">
             ©
             {' '}
