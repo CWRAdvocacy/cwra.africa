@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import {
-  Container, Box, Grid, Typography, Link, Divider,
+  Container, Box, Grid, Typography, Divider,
 } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -9,7 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { CwraTreeIcon } from './icons/CwraTreeIcon';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   title: {
     fontFamily: 'Playfair Display',
     fontWeight: 'bold',

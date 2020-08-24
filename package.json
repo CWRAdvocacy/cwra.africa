@@ -5,7 +5,8 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "yarn build && yarn run firebase deploy",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -28,6 +29,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.5",
-    "eslint-plugin-react-hooks": "4.0.8"
+    "eslint-plugin-react-hooks": "4.0.8",
+    "firebase-tools": "^8.9.0"
   }
 }
