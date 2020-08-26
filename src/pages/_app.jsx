@@ -5,14 +5,11 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Router from 'next/router';
 
 import { OpenGraph as HeadOpenGraph } from '../components/Head/OpenGraph';
 import { Favicons as HeadFavicons } from '../components/Head/Favicons';
 import { Title as HeadTitle } from '../components/Head/Title';
 import theme from '../theme';
-
-import * as gtag from '../lib/gtag';
 
 require('typeface-playfair-display');
 require('typeface-roboto');
@@ -27,16 +24,6 @@ export default function MyApp(props) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
-  }, []);
-
-  React.useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-    Router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    };
   }, []);
 
   return (
