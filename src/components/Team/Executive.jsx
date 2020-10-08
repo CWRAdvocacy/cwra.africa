@@ -14,7 +14,7 @@ export const Executive = () => {
     {
       name: 'Ruth Nekura, PhD',
       imageUrl: './images/team/ruth.jpg',
-      position: 'Co-founder & Executive Director',
+      position: 'Co-founder',
       brief: 'Dr. Ruth Nekura is a feminist human rights lawyer/researcher with over 8 years experience in gender equality and women\'s rights, violence against women laws and interventions, program management and evaluation, service integration and social protection. Expertise in legal analysis, research, advocacy, policy reform, multi-sector implementation strategies and qualitative methodologies.',
     },
   ];
