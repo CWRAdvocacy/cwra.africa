@@ -12,12 +12,18 @@ Accessible at https://cwra.africa/
 
 Clone or fork this repo to your local machine and run:
 
-```bash
+```sh
 yarn
 yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Deployment
+
+This site is hosted on Firebase. To deploy:
+
+```sh
+yarn deploy
+```
 
 
 ## Contributing

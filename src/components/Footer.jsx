@@ -25,7 +25,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Box pt={4} pb={2}>
-          <Grid container>
+          <Grid container justify="space-between">
             <Grid item xs={12} sm="auto">
               <Grid container spacing={1} justify="center">
                 <Grid item>
@@ -37,11 +37,6 @@ const Footer = () => {
                   </Typography>
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid item xs={12} sm>
-              <Typography align="center">
-                ...
-              </Typography>
             </Grid>
             <Grid item xs={12} sm="auto" className={classes.icons}>
               <IconButton href="https://facebook.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
