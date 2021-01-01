@@ -1,4 +1,4 @@
-import Layout from '../components/layouts/base';
+import Layout from '../layouts/base';
 import Hero from '../components/Hero';
 import ExecutiveTeam from '../components/Team/Executive';
 import BoardTeam from '../components/Team/Board';

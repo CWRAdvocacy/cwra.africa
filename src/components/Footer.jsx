@@ -1,7 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container, Box, Grid, Typography, Divider,
-} from '@material-ui/core';
+import { Container, Box, Grid, Typography, Divider } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -12,11 +10,11 @@ import { CwraTreeIcon } from './icons/CwraTreeIcon';
 const useStyles = makeStyles(() => ({
   title: {
     fontFamily: 'Playfair Display',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   icons: {
-    textAlign: 'center',
-  },
+    textAlign: 'center'
+  }
 }));
 
 const Footer = () => {
@@ -32,20 +30,36 @@ const Footer = () => {
                   <CwraTreeIcon style={{ color: 'inherit' }} fontSize="large" />
                 </Grid>
                 <Grid item>
-                  <Typography variant="h5" align="center" className={classes.title}>
+                  <Typography
+                    variant="h5"
+                    align="center"
+                    className={classes.title}
+                  >
                     CWRA
                   </Typography>
                 </Grid>
               </Grid>
             </Grid>
             <Grid item xs={12} sm="auto" className={classes.icons}>
-              <IconButton href="https://facebook.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
+              <IconButton
+                href="https://facebook.com/CWRAdvocacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FacebookIcon />
               </IconButton>
-              <IconButton href="https://twitter.com/CWRAdvocacy" target="_blank" rel="noopener noreferrer">
+              <IconButton
+                href="https://twitter.com/CWRAdvocacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <TwitterIcon />
               </IconButton>
-              <IconButton href="https://www.linkedin.com/company/cwradvocacy" target="_blank" rel="noopener noreferrer">
+              <IconButton
+                href="https://www.linkedin.com/company/cwradvocacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedInIcon />
               </IconButton>
             </Grid>
@@ -54,11 +68,8 @@ const Footer = () => {
         <Divider />
         <Box pt={3} pb={4} align="center">
           <Typography variant="caption">
-            ©
-            {' '}
-            {new Date().getFullYear()}
-            {' '}
-            Center for Women&apos;s Rights Advocacy
+            © 2020 - {new Date().getFullYear()} Center for Women&apos;s Rights
+            Advocacy
           </Typography>
         </Box>
       </Container>

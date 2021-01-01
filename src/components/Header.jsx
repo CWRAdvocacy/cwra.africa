@@ -6,17 +6,17 @@ import Typography from '@material-ui/core/Typography';
 import { Box } from '@material-ui/core';
 import { CwraTreeIcon } from './icons/CwraTreeIcon';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(2)
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Playfair Display',
-  },
+    fontFamily: 'Playfair Display'
+  }
 }));
 
 export default function ButtonAppBar() {
