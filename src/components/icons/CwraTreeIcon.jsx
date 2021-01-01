@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 export function CwraTreeIcon(props) {

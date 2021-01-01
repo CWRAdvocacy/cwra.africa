@@ -1,14 +1,14 @@
-import PageLayout from '../components/layouts/PageLayout';
+import Layout from '../components/layouts/base';
 import Hero from '../components/Hero';
 import ExecutiveTeam from '../components/Team/Executive';
 import BoardTeam from '../components/Team/Board';
 
 const Index = () => (
-  <PageLayout>
+  <Layout>
     <Hero />
     <ExecutiveTeam />
     <BoardTeam />
-  </PageLayout>
+  </Layout>
 );
 
 export default Index;
