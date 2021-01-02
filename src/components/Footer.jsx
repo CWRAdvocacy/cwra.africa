@@ -5,9 +5,13 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import { grey } from '@material-ui/core/colors';
 import { CwraTreeIcon } from './icons/CwraTreeIcon';
 
 const useStyles = makeStyles(() => ({
+  root: {
+    backgroundColor: grey[100]
+  },
   title: {
     fontFamily: 'Playfair Display',
     fontWeight: 'bold'
@@ -20,7 +24,7 @@ const useStyles = makeStyles(() => ({
 const Footer = () => {
   const classes = useStyles();
   return (
-    <footer>
+    <footer className={classes.root}>
       <Container>
         <Box pt={4} pb={2}>
           <Grid container justify="space-between">

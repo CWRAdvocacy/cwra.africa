@@ -3,9 +3,10 @@ import {
   Container,
   Divider,
   Typography,
-  createMuiTheme,
+  createMuiTheme
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 import BaseLayout from './base';
 
 const theme = createMuiTheme();
@@ -13,6 +14,11 @@ const theme = createMuiTheme();
 export default function PageLayout({ title, children }) {
   return (
     <BaseLayout>
+      <Head>
+        <title>
+          The Center for Women&apos;s Rights Advocacy (CWRA) | {title}
+        </title>
+      </Head>
       <Container maxWidth="md">
         <Box pt={5}>
           <Typography variant="h4" component="h1" paragraph>
@@ -30,10 +36,10 @@ export default function PageLayout({ title, children }) {
 
 PageLayout.defaultProps = {
   title: 'Page Title',
-  children: 'Some contentnt',
+  children: 'Some contentnt'
 };
 
 PageLayout.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.arrayOf(PropTypes.element)
 };
