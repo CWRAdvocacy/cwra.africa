@@ -10,6 +10,5 @@ export default function BaseLayout({ children, props }) {
       {children}
       <Footer />
     </div>
-
   );
 }

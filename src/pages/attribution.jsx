@@ -36,29 +36,53 @@ export default function AttributionPage() {
         Software
       </Typography>
       <Typography variant="body1" paragraph>
-        This website was built with love by our partners at{' '}
+        Technology at CWRA is built by{' '}
         <Link
-          href="https://lomon.org"
+          href="https://davidlemayian.org"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Lomon Foundation
+          David Lemayian
         </Link>
-        , using{' '}
+        {' using '}
         <Link
           href="https://nextjs.com"
           target="_blank"
           rel="noreferrer noopener"
         >
           Next.js
-        </Link>{' '}
-        and{' '}
+        </Link>
+        {', '}
+        <Link
+          href="https://reactjs.org/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          ReactJS
+        </Link>
+        {' and '}
         <Link
           href="https://material-ui.com/"
           target="_blank"
           rel="noreferrer noopener"
         >
           Material-UI
+        </Link>
+        , and supported by{' '}
+        <Link
+          href="https://github.com/nonprofit"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          GitHub
+        </Link>{' '}
+        and{' '}
+        <Link
+          href="https://www.google.com/nonprofits/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Google
         </Link>
         .
       </Typography>

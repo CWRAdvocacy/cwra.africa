@@ -32,7 +32,10 @@ export default function MyApp(props) {
       <HeadFavicons />
       <HeadOpenGraph />
       <Head>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
@@ -46,5 +49,5 @@ export default function MyApp(props) {
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  pageProps: PropTypes.object.isRequired,
+  pageProps: PropTypes.object.isRequired
 };
