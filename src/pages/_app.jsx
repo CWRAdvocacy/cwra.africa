@@ -6,9 +6,11 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import { useRouter } from 'next/router';
 import { OpenGraph as HeadOpenGraph } from '../components/Head/OpenGraph';
 import { Favicons as HeadFavicons } from '../components/Head/Favicons';
 import { Title as HeadTitle } from '../components/Head/Title';
+import { analytics } from '../utils/firebase';
 import theme from '../theme';
 
 require('typeface-playfair-display');
@@ -17,13 +19,32 @@ require('typeface-roboto');
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
+  // Material-UI
+  // Remove the server-side injected CSS.
+  // eslint-disable-next-line no-undef
   React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    // eslint-disable-next-line no-undef
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+  }, []);
+
+  // Firebase Analytics
+  const routers = useRouter();
+  React.useEffect(() => {
+    const logEvent = url => {
+      analytics().setCurrentScreen(url);
+      analytics().logEvent('page_view');
+    };
+
+    routers.events.on('routeChangeComplete', logEvent);
+    // For First Page
+    logEvent(window.location.pathname);
+
+    // Remvove Event Listener after un-mount
+    return () => {
+      routers.events.off('routeChangeComplete', logEvent);
+    };
   }, []);
 
   return (
