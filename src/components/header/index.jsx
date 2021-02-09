@@ -8,7 +8,6 @@ import {
   Typography
 } from '@material-ui/core';
 
-import DonateButton from './DonateDialog';
 import DrawerButton from './Drawer';
 
 import Link from '../Link';
@@ -32,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'row',
     padding: 0,
-    marginRight: theme.spacing(2),
+    // marginRight: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
       display: 'none'
     }
@@ -100,7 +99,7 @@ export default function ButtonAppBar() {
           <AppBarLinks links={links} />
 
           {/* Donate Button */}
-          <DonateButton />
+          {/* <DonateButton /> */}
         </Toolbar>
       </AppBar>
     </div>

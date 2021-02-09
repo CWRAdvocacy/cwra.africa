@@ -67,12 +67,12 @@ export default function MainDrawer(props) {
           </ListItem>
         ))}
       </List>
-      <Divider />
+      {/* <Divider />
       <List>
         <ListItem button onClick={handleClickOpenDonateDialog}>
           <ListItemText primary="Donate" />
         </ListItem>
-      </List>
+      </List> */}
     </div>
   );
 
@@ -95,7 +95,7 @@ export default function MainDrawer(props) {
       </Drawer>
 
       {/* Donate Dialog */}
-      <DonateDialog open={openDonateDialog} onClose={handleCloseDonateDialog} />
+      {/* <DonateDialog open={openDonateDialog} onClose={handleCloseDonateDialog} /> */}
     </>
   );
 }
