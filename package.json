@@ -13,11 +13,11 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.2",
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
     "firebase": "^8.2.6",
-    "next": "^10.0.3",
+    "next": "^10.0.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -25,18 +25,18 @@
     "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint": "^6.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.0.0",
-    "eslint-config-nextjs": "1.0.6",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-html": "^5.0.3",
+    "eslint-config-nextjs": "1.0.7",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.14.2",
-    "eslint-plugin-react-hooks": "^1.4.0",
-    "firebase-tools": "^9.0.1",
-    "prettier": "^1.16.4"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "firebase-tools": "^9.3.0",
+    "prettier": "^2.2.1"
   }
 }
