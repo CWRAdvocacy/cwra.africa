@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarLinksListItem: {
     minHeight: '64px',
+    textDecoration: 'none',
   },
 }));
 
