@@ -1,34 +1,27 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Drawer,
-  List,
-  Divider,
-  ListItem,
-  ListItemText
-} from '@material-ui/core';
+import { Drawer, List, ListItem, ListItemText } from '@material-ui/core';
 
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { DonateDialog } from './DonateDialog';
 
 import Link from '../Link';
 
 const useStyles = makeStyles({
   list: {
-    width: 250
+    width: 250,
   },
   fullList: {
-    width: 'auto'
-  }
+    width: 'auto',
+  },
 });
 
 export default function MainDrawer(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  const toggleDrawer = openDrawer => event => {
+  const toggleDrawer = (openDrawer) => (event) => {
     if (
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
@@ -39,15 +32,7 @@ export default function MainDrawer(props) {
     setOpen(openDrawer);
   };
 
-  const [openDonateDialog, setOpenDonateDialog] = React.useState(false);
-  const handleClickOpenDonateDialog = () => {
-    setOpenDonateDialog(true);
-  };
-  const handleCloseDonateDialog = () => {
-    setOpenDonateDialog(false);
-  };
-
-  const listLinks = links => (
+  const listLinks = (links) => (
     <div
       className={classes.list}
       role="presentation"
@@ -55,7 +40,7 @@ export default function MainDrawer(props) {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {links.map(link => (
+        {links.map((link) => (
           <ListItem
             key={link.url}
             button
@@ -67,12 +52,6 @@ export default function MainDrawer(props) {
           </ListItem>
         ))}
       </List>
-      {/* <Divider />
-      <List>
-        <ListItem button onClick={handleClickOpenDonateDialog}>
-          <ListItemText primary="Donate" />
-        </ListItem>
-      </List> */}
     </div>
   );
 
@@ -93,9 +72,6 @@ export default function MainDrawer(props) {
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {listLinks(props.links)}
       </Drawer>
-
-      {/* Donate Dialog */}
-      {/* <DonateDialog open={openDonateDialog} onClose={handleCloseDonateDialog} /> */}
     </>
   );
 }

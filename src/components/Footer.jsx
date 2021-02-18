@@ -6,20 +6,20 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { grey } from '@material-ui/core/colors';
-import { CwraTreeIcon } from './icons/CwraTreeIcon';
+import CwraTreeIcon from './icons/CwraTreeIcon';
 import Link from './Link';
 
 const useStyles = makeStyles(() => ({
   root: {
-    backgroundColor: grey[100]
+    backgroundColor: grey[100],
   },
   title: {
     fontFamily: 'Playfair Display',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   icons: {
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 }));
 
 const Footer = () => {
@@ -118,13 +118,13 @@ function AttributionText() {
 
 const ccStyles = makeStyles({
   link: {
-    textDecoration: 'none !important'
+    textDecoration: 'none !important',
   },
   icon: {
     width: '16px',
     height: '16px',
-    verticalAlign: 'middle'
-  }
+    verticalAlign: 'middle',
+  },
 });
 
 function CcIcon() {

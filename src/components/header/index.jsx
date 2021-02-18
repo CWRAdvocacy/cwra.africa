@@ -5,46 +5,54 @@ import {
   ListItem,
   ListItemText,
   Toolbar,
-  Typography
+  Typography,
 } from '@material-ui/core';
 
+import CwraTreeIcon from '../icons/CwraTreeIcon';
 import DrawerButton from './Drawer';
 
 import Link from '../Link';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   drawerButton: {
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(0),
     [theme.breakpoints.up('md')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
+  },
+  titleLink: {
+    textDecoration: 'none !important',
+    display: 'flex',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    flexGrow: 1,
+    maxWidth: '100%',
+    paddingRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
+    flexBasis: 0,
     fontFamily: 'Playfair Display',
-    paddingRight: theme.spacing(2)
-  },
-  titleLink: {
-    textDecoration: 'none !important'
+    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(1),
   },
   appBarLinksList: {
     display: 'flex',
     flexDirection: 'row',
     padding: 0,
-    // marginRight: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
   },
   appBarLinksListItem: {
-    minHeight: '64px'
-  }
+    minHeight: '64px',
+  },
 }));
 
 function AppBarLinks({ links }) {
   const classes = useStyles();
 
-  const linksList = links.map(link => (
+  const linksList = links.map((link) => (
     <ListItem
       key={link.url}
       button
@@ -73,12 +81,12 @@ export default function ButtonAppBar() {
     { title: 'Home', url: '/' },
     {
       title: 'About',
-      url: '/about'
+      url: '/about',
     },
     {
       title: 'Contact Us',
-      url: '/contact-us'
-    }
+      url: '/contact-us',
+    },
   ];
 
   return (
@@ -88,18 +96,16 @@ export default function ButtonAppBar() {
           {/* Drawer */}
           <DrawerButton className={classes.drawerButton} links={links} />
 
-          {/* Logo */}
-          <Typography variant="h6" className={classes.title} noWrap>
-            <Link href="/" color="inherit" className={classes.titleLink}>
+          {/* Logo Link */}
+          <Link href="/" color="inherit" className={classes.titleLink}>
+            <CwraTreeIcon />
+            <Typography variant="h6" className={classes.title} noWrap>
               Center for Women&apos;s Rights Advocacy
-            </Link>
-          </Typography>
+            </Typography>
+          </Link>
 
           {/* Links */}
           <AppBarLinks links={links} />
-
-          {/* Donate Button */}
-          {/* <DonateButton /> */}
         </Toolbar>
       </AppBar>
     </div>

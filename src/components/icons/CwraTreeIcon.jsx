@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import SvgIcon from '@material-ui/core/SvgIcon';
 
-export function CwraTreeIcon(props) {
+export default function CwraTreeIcon(props) {
   return (
     <SvgIcon {...props}>
       <g transform="translate(2.000000, 0.000000)">
@@ -43,5 +43,3 @@ export function CwraTreeIcon(props) {
     </SvgIcon>
   );
 }
-
-export default CwraTreeIcon;
