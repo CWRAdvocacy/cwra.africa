@@ -8,13 +8,13 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { Button, Hidden } from '@material-ui/core';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   button: {
     borderColor: '#ffffff',
     color: '#ffffff',
     marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(3)
-  }
+    marginBottom: theme.spacing(3),
+  },
 }));
 
 export default function Hero() {

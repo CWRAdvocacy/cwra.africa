@@ -3,7 +3,7 @@ import {
   Container,
   Divider,
   Typography,
-  createMuiTheme
+  createMuiTheme,
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
@@ -34,10 +34,10 @@ export default function PageLayout({ title, children }) {
 
 PageLayout.defaultProps = {
   title: 'Page Title',
-  children: 'Some contentnt'
+  children: 'Some contentnt',
 };
 
 PageLayout.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.element)
+  children: PropTypes.arrayOf(PropTypes.element),
 };

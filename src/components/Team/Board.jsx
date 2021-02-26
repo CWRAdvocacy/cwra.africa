@@ -7,7 +7,7 @@ export const boardBios = [
     fullName: 'Suzanne Kidenda ',
     position: 'Chair',
     positionLong: 'Board Chairperson (Mental Health Expert)',
-    currentJob: 'Program Manager, Physicians for Human Rights, Kenya'
+    currentJob: 'Program Manager, Physicians for Human Rights, Kenya',
   },
   {
     name: 'Dr. Kamundia',
@@ -15,14 +15,14 @@ export const boardBios = [
     position: 'Secretary',
     positionLong: 'Board Member (Human Rights/Disability Rights Expert)',
     currentJob:
-      'Assistant Director: Research, Advocacy and Outreach at the Kenya National Commission on Human Rights'
+      'Assistant Director: Research, Advocacy and Outreach at the Kenya National Commission on Human Rights',
   },
   {
     name: 'Yiantet',
     fullName: 'Sylvia Yiantet',
     position: 'Member',
     positionLong: 'Board Member (Legal/NPO systems expert)',
-    currentJob: 'Programs Manager, Legal Resources Foundation.'
+    currentJob: 'Programs Manager, Legal Resources Foundation.',
   },
   {
     name: 'Naipanoi',
@@ -30,7 +30,7 @@ export const boardBios = [
     position: 'Member',
     positionLong:
       'Board Member. (Community engagement expert) Rural woman representing the interests of community women.',
-    currentJob: 'Subsistence farmer'
+    currentJob: 'Subsistence farmer',
   },
   {
     name: 'Sintalo',
@@ -38,19 +38,19 @@ export const boardBios = [
     position: 'Treasurer',
     positionLong: 'Board Treasurer (Financial Systems Strategist)',
     currentJob:
-      'Operations and Finance Manage at Shona Export Processing Zone Company'
+      'Operations and Finance Manage at Shona Export Processing Zone Company',
   },
   {
     name: 'Dr. Ruth',
     fullName: 'Dr. Ruth Nekura',
     position: 'Secretary',
     positionLong: 'Board Treasurer (Financial Systems Strategist)',
-    currentJob: 'Co-founder CWRA'
-  }
+    currentJob: 'Co-founder CWRA',
+  },
 ];
 
 const Board = () => {
-  const boardMembers = boardBios.slice(0, 5).map(member => (
+  const boardMembers = boardBios.slice(0, 5).map((member) => (
     <Grid item xs={6} sm={3} md={2} key={member.name}>
       <Bio name={member.name} position={member.position} />
     </Grid>

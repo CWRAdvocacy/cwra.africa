@@ -9,7 +9,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  Grid
+  Grid,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -17,19 +17,19 @@ import {
   PaypalIcon,
   MpesaIcon,
   EthereumIcon,
-  CreditCardIcon
+  CreditCardIcon,
 } from '../icons/donate';
 
 import Link from '../Link';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   headingAccordion: {
     fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
+    fontWeight: theme.typography.fontWeightRegular,
   },
   textHelpDialog: {
-    marginTop: theme.spacing(3)
-  }
+    marginTop: theme.spacing(3),
+  },
 }));
 
 function PaymentsAccordion() {
@@ -40,13 +40,13 @@ function PaymentsAccordion() {
       icon: <PaypalIcon />,
       title: 'Paypal (Coming Soon)',
       description: 'Coming soon.',
-      disabled: true
+      disabled: true,
     },
     {
       icon: <MpesaIcon />,
       title: 'M-pesa (Coming Soon)',
       description: 'Coming soon.',
-      disabled: true
+      disabled: true,
     },
     {
       icon: <EthereumIcon />,
@@ -63,17 +63,17 @@ function PaymentsAccordion() {
           </Typography>
         </div>
       ),
-      disabled: false
+      disabled: false,
     },
     {
       icon: <CreditCardIcon />,
       title: 'Other (Coming Soon)',
       description: 'Coming soon.',
-      disabled: true
-    }
+      disabled: true,
+    },
   ];
 
-  const paymentList = paymentProviders.map(provider => (
+  const paymentList = paymentProviders.map((provider) => (
     <Accordion key={provider.title} disabled={provider.disabled}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}

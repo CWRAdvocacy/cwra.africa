@@ -32,7 +32,7 @@ export default function MyApp(props) {
   // Firebase Analytics
   const routers = useRouter();
   React.useEffect(() => {
-    const logEvent = url => {
+    const logEvent = (url) => {
       analytics().setCurrentScreen(url);
       analytics().logEvent('page_view');
     };
@@ -70,5 +70,5 @@ export default function MyApp(props) {
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  pageProps: PropTypes.object.isRequired
+  pageProps: PropTypes.object.isRequired,
 };

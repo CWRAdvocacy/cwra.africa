@@ -216,18 +216,16 @@ function OurSecretariatAndBoard() {
         Meet members of CWRA's team
       </Typography>
       <ul>
-        {executiveTeam.map((member, i) => {
-          return (
-            <li key={i}>
-              <Typography variant="body1">
-                <b>{member.name}</b> - {member.position}
-              </Typography>
-              <Typography variant="body2" paragraph>
-                {member.brief}
-              </Typography>
-            </li>
-          );
-        })}
+        {executiveTeam.map((member, i) => (
+          <li key={i}>
+            <Typography variant="body1">
+              <b>{member.name}</b> - {member.position}
+            </Typography>
+            <Typography variant="body2" paragraph>
+              {member.brief}
+            </Typography>
+          </li>
+        ))}
       </ul>
 
       <Typography variant="h6" paragraph>
@@ -237,18 +235,16 @@ function OurSecretariatAndBoard() {
         The Board of Directors provides the formal governance of CWRA as a whole
       </Typography>
       <ol>
-        {boardBios.map((member, i) => {
-          return (
-            <li key={i}>
-              <Typography variant="body1">
-                <b>{member.fullName}</b> - {member.positionLong}
-              </Typography>
-              <Typography variant="body2" paragraph>
-                Current Job: {member.currentJob}
-              </Typography>
-            </li>
-          );
-        })}
+        {boardBios.map((member, i) => (
+          <li key={i}>
+            <Typography variant="body1">
+              <b>{member.fullName}</b> - {member.positionLong}
+            </Typography>
+            <Typography variant="body2" paragraph>
+              Current Job: {member.currentJob}
+            </Typography>
+          </li>
+        ))}
       </ol>
     </div>
   );

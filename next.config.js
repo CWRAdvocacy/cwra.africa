@@ -1,6 +1,6 @@
 module.exports = {
   devIndicators: {
-    autoPrerender: false
+    autoPrerender: false,
   },
-  trailingSlash: true
+  trailingSlash: true,
 };
