@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {
   AppBar,
   List,
@@ -24,17 +25,13 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none !important',
     display: 'flex',
     alignItems: 'center',
-    flexWrap: 'wrap',
     flexGrow: 1,
-    maxWidth: '100%',
-    paddingRight: theme.spacing(2),
+    minWidth: 0,
+    marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1,
-    flexBasis: 0,
     fontFamily: 'Playfair Display',
-    paddingRight: theme.spacing(2),
-    paddingLeft: theme.spacing(1),
+    marginLeft: theme.spacing(1),
   },
   appBarLinksList: {
     display: 'flex',
@@ -46,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarLinksListItem: {
     minHeight: '64px',
-    textDecoration: 'none',
+    textDecoration: 'none !important',
+    color: 'inherit',
   },
 }));
 
@@ -77,6 +75,7 @@ function AppBarLinks({ links }) {
 
 export default function ButtonAppBar() {
   const classes = useStyles();
+  const acronymTitle = useMediaQuery('(max-width:470px)');
 
   const links = [
     { title: 'Home', url: '/' },
@@ -101,7 +100,7 @@ export default function ButtonAppBar() {
           <Link href="/" color="inherit" className={classes.titleLink}>
             <CwraTreeIcon />
             <Typography variant="h6" className={classes.title} noWrap>
-              Center for Women&apos;s Rights Advocacy
+              {acronymTitle ? 'CWRA' : "Center for Women's Rights Advocacy"}
             </Typography>
           </Link>
 
