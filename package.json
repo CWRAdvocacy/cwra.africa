@@ -13,11 +13,11 @@
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
+    "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
-    "firebase": "^8.5.0",
-    "next": "^10.2.0",
+    "firebase": "^8.8.0",
+    "next": "^11.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,17 +26,17 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.26.0",
+    "eslint": "^7.31.0",
     "eslint-config-airbnb": "^18.0.0",
     "eslint-config-nextjs": "1.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-html": "^6.1.2",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "firebase-tools": "^9.10.2",
-    "prettier": "^2.3.0"
+    "firebase-tools": "^9.16.0",
+    "prettier": "^2.3.2"
   }
 }
