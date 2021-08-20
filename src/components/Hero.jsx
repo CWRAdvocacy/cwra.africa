@@ -25,7 +25,7 @@ export default function Hero() {
       <Hidden smDown>
         <Box pt={1} />
       </Hidden>
-      <Grid container justify="center" alignItems="center">
+      <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={12} sm={6} md={4}>
           <Container>
             <Box py={2}>
