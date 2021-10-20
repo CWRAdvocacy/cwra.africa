@@ -74,6 +74,7 @@ const Footer = () => {
         <Divider />
         <Box pt={3} pb={4}>
           <AttributionText />
+          <FooterLinks />
         </Box>
       </Container>
     </footer>
@@ -160,4 +161,18 @@ function CcIcon() {
       </svg>
     </Link>
   );
+}
+
+const FooterLinks = () => {
+  return (
+    <>
+    <Typography variant="body2">
+      <Link href="/">Home</Link>{' . '}
+      <Link href="/about">About</Link>{' . '}
+      <Link href="/contact-us">Contact Us</Link>{' . '}
+      <Link href="/privacy-policy/">Privacy Policy</Link>{' . '}
+      <Link href="/terms-of-use/">Terms of Use</Link>{' . '}
+    </Typography>
+    </>
+  )
 }

@@ -1,6 +1,7 @@
 import { Typography } from '@material-ui/core';
 import PageLayout from '../layouts/page';
 import Link from '../components/Link';
+import { AttributionSponsors } from '../components/attribution/sponsors';
 
 export default function AttributionPage() {
   return (
@@ -68,24 +69,9 @@ export default function AttributionPage() {
         >
           Material-UI
         </Link>
-        , and supported by{' '}
-        <Link
-          href="https://github.com/nonprofit"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          GitHub
-        </Link>{' '}
-        and{' '}
-        <Link
-          href="https://www.google.com/nonprofits/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Google
-        </Link>
         .
       </Typography>
+      <AttributionSponsors/>
     </PageLayout>
   );
 }
