@@ -57,7 +57,7 @@ const Board = () => {
   ));
 
   return (
-    <Box>
+    <Box pb={9} pt={3}>
       <Container>
         <Typography variant="h5" align="center" gutterBottom paragraph>
           Our Board

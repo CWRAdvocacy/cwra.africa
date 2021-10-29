@@ -33,7 +33,7 @@ export const Executive = () => {
   ));
 
   return (
-    <Box pt={5} pb={3}>
+    <Box pt={12} pb={3}>
       <Container maxWidth="md">
         <Typography variant="h4" align="center" gutterBottom>
           Our Team

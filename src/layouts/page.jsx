@@ -18,13 +18,13 @@ export default function PageLayout({ title, children }) {
         <title>{title} - Center for Women&apos;s Rights Advocacy (CWRA)</title>
       </Head>
       <Container maxWidth="md">
-        <Box pt={5}>
+        <Box pt={9}>
           <Typography variant="h4" component="h1" paragraph>
             {title}
           </Typography>
         </Box>
-        <Divider style={{ marginBottom: theme.spacing(1) }} />
-        <Box pt={2} pb={5}>
+        <Divider style={{ marginTop: theme.spacing(1) }} />
+        <Box pt={4} pb={9}>
           {children}
         </Box>
       </Container>

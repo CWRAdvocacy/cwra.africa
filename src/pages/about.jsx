@@ -197,7 +197,7 @@ export default function AboutPage() {
           </Typography>
         </li>
       </ol>
-      <Divider style={{ margin: '30px 0' }} />
+      <Divider style={{ margin: '70px 0 50px' }} />
       <OurSecretariatAndBoard />
     </PageLayout>
   );

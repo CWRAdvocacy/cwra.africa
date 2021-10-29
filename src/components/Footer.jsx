@@ -22,16 +22,16 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const Footer = () => {
+export default function Footer () {
   const classes = useStyles();
   return (
     <footer className={classes.root}>
       {/* TODO: Introduce Donate Banner/Section */}
       <Container>
-        <Box pt={4} pb={2}>
-          <Grid container justify="space-between">
+        <Box pt={7} pb={2}>
+          <Grid container justifyContent="space-between">
             <Grid item xs={12} sm="auto">
-              <Grid container spacing={1} justify="center">
+              <Grid container spacing={1} justifyContent="center">
                 <Grid item>
                   <CwraTreeIcon style={{ color: 'inherit' }} fontSize="large" />
                 </Grid>
@@ -72,18 +72,18 @@ const Footer = () => {
           </Grid>
         </Box>
         <Divider />
-        <Box pt={3} pb={4}>
+        <Box pt={3} pb={7}>
           <AttributionText />
-          <FooterLinks />
+          <Box pt={2}>
+            <FooterLinks />
+          </Box>
         </Box>
       </Container>
     </footer>
   );
 };
 
-export default Footer;
-
-function AttributionText() {
+function AttributionText () {
   return (
     <div>
       <Typography variant="caption" gutterBottom>The{' '}
@@ -166,7 +166,7 @@ function CcIcon() {
   );
 }
 
-const FooterLinks = () => {
+function FooterLinks () {
   return (
     <>
     <Typography variant="body2">

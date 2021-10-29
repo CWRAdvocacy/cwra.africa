@@ -21,14 +21,14 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Box bgcolor="primary.main" color="white">
+    <Box bgcolor="primary.main" color="white" pt={4} pb={4}>
       <Hidden smDown>
         <Box pt={1} />
       </Hidden>
       <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={12} sm={6} md={4}>
           <Container>
-            <Box py={2}>
+            <Box py={4}>
               <picture>
                 <source
                   srcSet="./images/events/2019_09_narok/DSC_5586.webp"
@@ -67,15 +67,6 @@ export default function Hero() {
                 equal opportunities in social, economic, cultural, civil and
                 political life.
               </Typography>
-              {/* <Button
-                className={classes.button}
-                variant="outlined"
-                size="large"
-                href="mailto:hello@cwra.africa"
-                target="_blank"
-              >
-                Get in touch
-              </Button> */}
             </Box>
           </Container>
         </Grid>
