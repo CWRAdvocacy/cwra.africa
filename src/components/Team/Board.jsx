@@ -62,7 +62,7 @@ const Board = () => {
         <Typography variant="h5" align="center" gutterBottom paragraph>
           Our Board
         </Typography>
-        <Grid container spacing={2} justify="center">
+        <Grid container spacing={2} justifyContent="center">
           {boardMembers}
         </Grid>
       </Container>

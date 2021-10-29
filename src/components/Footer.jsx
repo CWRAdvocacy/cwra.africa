@@ -86,12 +86,15 @@ export default Footer;
 function AttributionText() {
   return (
     <div>
-      <Typography variant="body2" paragraph>
-        <CcIcon /> Content on this site, made by the{' '}
+      <Typography variant="caption" gutterBottom>The{' '}
         <Link href="https://cwra.africa/" target="_blank" rel="noreferrer">
           Center for Women&apos;s Rights Advocacy
-        </Link>
-        , is licensed under a{' '}
+        </Link>{' '}
+        (CWRA) is a not-for-profit organization incorporated in Kenya with the the Non-Governmental Organizations Co-ordination Board.
+      </Typography>
+      <Typography variant="caption" paragraph>Registration number: OP.218/051/18-261/11206 . VAT Registration: P051928629X</Typography>
+      <Typography variant="caption" gutterBottom>
+        <CcIcon /> Content on this site, made by CWRA, is licensed under a{' '}
         <Link
           rel="license noopener noreferrer"
           target="_blank"
@@ -101,7 +104,7 @@ function AttributionText() {
         </Link>
         .
       </Typography>
-      <Typography variant="body2" paragraph>
+      <Typography variant="caption" paragraph>
         <Link
           href="https://github.com/CWRAdvocacy"
           target="_blank"
@@ -171,7 +174,7 @@ const FooterLinks = () => {
       <Link href="/about">About</Link>{' . '}
       <Link href="/contact-us">Contact Us</Link>{' . '}
       <Link href="/privacy-policy/">Privacy Policy</Link>{' . '}
-      <Link href="/terms-of-use/">Terms of Use</Link>{' . '}
+      <Link href="/terms-of-use/">Terms of Use</Link>
     </Typography>
     </>
   )
