@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import PageLayout from '../layouts/page';
 import Link from '../components/Link';
 import { AttributionSponsors } from '../components/attribution/sponsors';

@@ -3,8 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 import { useRouter } from 'next/router';
 import { OpenGraph as HeadOpenGraph } from '../components/Head/OpenGraph';
@@ -47,25 +47,25 @@ export default function MyApp(props) {
     };
   }, []);
 
-  return (
-    <>
-      <HeadTitle />
-      <HeadFavicons />
-      <HeadOpenGraph />
-      <Head>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-        <meta name="facebook-domain-verification" content="x47uhdsz1xrnaxq2qtbhc64eykf7e2" />
-      </Head>
+  return <>
+    <HeadTitle />
+    <HeadFavicons />
+    <HeadOpenGraph />
+    <Head>
+      <meta
+        name="viewport"
+        content="minimum-scale=1, initial-scale=1, width=device-width"
+      />
+      <meta name="facebook-domain-verification" content="x47uhdsz1xrnaxq2qtbhc64eykf7e2" />
+    </Head>
+    <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
-    </>
-  );
+    </StyledEngineProvider>
+  </>;
 }
 
 MyApp.propTypes = {

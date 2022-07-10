@@ -1,4 +1,4 @@
-import { Divider, Typography } from '@material-ui/core';
+import { Divider, Typography } from '@mui/material';
 import PageLayout from '../layouts/page';
 import { executiveTeam } from '../components/Team/Executive';
 

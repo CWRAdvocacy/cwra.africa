@@ -1,5 +1,5 @@
-import { makeStyles } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import makeStyles from '@mui/styles/makeStyles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import {
   AppBar,
   List,
@@ -7,7 +7,7 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import CwraTreeIcon from '../icons/CwraTreeIcon';
 import DrawerButton from './Drawer';
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     padding: 0,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none',
     },
   },

@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Drawer, List, ListItem, ListItemText } from '@material-ui/core';
+import makeStyles from '@mui/styles/makeStyles';
+import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import Link from '../Link';
 
@@ -55,23 +55,21 @@ export default function MainDrawer(props) {
     </div>
   );
 
-  return (
-    <>
-      {/* Button */}
-      <IconButton
-        color="inherit"
-        aria-label="open drawer"
-        onClick={toggleDrawer(true)}
-        edge="start"
-        className={clsx(classes.menuButton, props.className)}
-      >
-        <MenuIcon />
-      </IconButton>
+  return <>
+    {/* Button */}
+    <IconButton
+      color="inherit"
+      aria-label="open drawer"
+      onClick={toggleDrawer(true)}
+      edge="start"
+      className={clsx(classes.menuButton, props.className)}
+      size="large">
+      <MenuIcon />
+    </IconButton>
 
-      {/* Drawer */}
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {listLinks(props.links)}
-      </Drawer>
-    </>
-  );
+    {/* Drawer */}
+    <Drawer open={open} onClose={toggleDrawer(false)}>
+      {listLinks(props.links)}
+    </Drawer>
+  </>;
 }

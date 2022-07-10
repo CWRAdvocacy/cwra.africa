@@ -1,11 +1,11 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Grid, Typography, Divider } from '@material-ui/core';
-import IconButton from '@material-ui/core/IconButton';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import makeStyles from '@mui/styles/makeStyles';
+import { Container, Box, Grid, Typography, Divider } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import { grey } from '@material-ui/core/colors';
+import { grey } from '@mui/material/colors';
 import CwraTreeIcon from './icons/CwraTreeIcon';
 import Link from './Link';
 
@@ -51,21 +51,21 @@ export default function Footer () {
                 href="https://facebook.com/CWRAdvocacy"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                size="large">
                 <FacebookIcon />
               </IconButton>
               <IconButton
                 href="https://twitter.com/CWRAdvocacy"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                size="large">
                 <TwitterIcon />
               </IconButton>
               <IconButton
                 href="https://www.linkedin.com/company/cwradvocacy"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                size="large">
                 <LinkedInIcon />
               </IconButton>
             </Grid>

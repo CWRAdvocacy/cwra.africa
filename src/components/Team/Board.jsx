@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid } from '@material-ui/core';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import { Bio } from './Bio';
 
 export const boardBios = [

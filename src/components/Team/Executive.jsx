@@ -1,4 +1,4 @@
-import { Grid, Container, Box, Typography } from '@material-ui/core';
+import { Grid, Container, Box, Typography } from '@mui/material';
 import { Bio } from './Bio';
 
 export const executiveTeam = [
@@ -10,7 +10,7 @@ export const executiveTeam = [
       'Milanoi is a human rights lawyer with over nine years’ experience in women’s rights, children’s rights and disability rights. She has worked with non-profit organisations, advocating for the rights of women and children to live a life free from violence. She has made presentations calling on ending violence against women and girls with disabilities at the United Nations Commission on Status of Women and United Nations Conference of State Parties on the Convention on the Rights of Persons with Disabilities.',
   },
   {
-    name: 'Ruth Nekura, PhD',
+    name: 'Dr. Ruth Nekura, PhD',
     imageUrl: '/images/team/ruth.jpg',
     position: 'Co-founder',
     brief:

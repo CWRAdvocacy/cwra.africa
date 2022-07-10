@@ -3,13 +3,13 @@ import {
   Container,
   Divider,
   Typography,
-  createMuiTheme,
-} from '@material-ui/core';
+  createTheme,
+} from '@mui/material';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import BaseLayout from './base';
 
-const theme = createMuiTheme();
+const theme = createTheme();
 
 export default function PageLayout({ title, children }) {
   return (

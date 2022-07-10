@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import { Button, Hidden } from '@material-ui/core';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import { Button, Hidden } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <Box bgcolor="primary.main" color="white" pt={4} pb={4}>
-      <Hidden smDown>
+      <Hidden mdDown>
         <Box pt={1} />
       </Hidden>
       <Grid container justifyContent="center" alignItems="center">
@@ -71,7 +71,7 @@ export default function Hero() {
           </Container>
         </Grid>
       </Grid>
-      <Hidden smDown>
+      <Hidden mdDown>
         <Box pb={4} />
       </Hidden>
     </Box>

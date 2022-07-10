@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 import {
   Typography,
   Button,
@@ -10,8 +10,8 @@ import {
   AccordionSummary,
   AccordionDetails,
   Grid,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import {
   PaypalIcon,

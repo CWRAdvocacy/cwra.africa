@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import SvgIcon from '@material-ui/core/SvgIcon';
+import SvgIcon from '@mui/material/SvgIcon';
 
 export default function CwraTreeIcon(props) {
   return (

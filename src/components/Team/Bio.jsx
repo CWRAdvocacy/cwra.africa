@@ -1,8 +1,8 @@
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
+import makeStyles from '@mui/styles/makeStyles';
+import Avatar from '@mui/material/Avatar';
 import PropTypes from 'prop-types';
-import { Typography } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
+import { Typography } from '@mui/material';
+import Box from '@mui/material/Box';
 import CwraTreeIcon from '../icons/CwraTreeIcon';
 
 const useStyles = makeStyles((theme) => ({
