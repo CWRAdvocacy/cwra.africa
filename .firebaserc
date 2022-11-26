@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "cwra-6b554"
+  },
+  "targets": {
+    "cwra-6b554": {
+      "hosting": {
+        "site": [
+          "cwra-6b554"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
