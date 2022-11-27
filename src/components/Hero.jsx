@@ -1,24 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import makeStyles from '@mui/styles/makeStyles';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { Button, Hidden } from '@mui/material';
+import Hidden  from '@mui/material/Hidden';
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    borderColor: '#ffffff',
-    color: '#ffffff',
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(3),
-  },
-}));
 
 export default function Hero() {
-  const classes = useStyles();
 
   return (
     <Box bgcolor="primary.main" color="white" pt={4} pb={4}>

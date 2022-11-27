@@ -1,9 +1,16 @@
 import makeStyles from '@mui/styles/makeStyles';
 import Avatar from '@mui/material/Avatar';
 import PropTypes from 'prop-types';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import HttpIcon from '@mui/icons-material/Http';
+
 import CwraTreeIcon from '../icons/CwraTreeIcon';
+import { IconButton } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Bio = ({ imageUrl, name, position, brief }) => {
+export const Bio = ({ imageUrl, name, position, brief, linkedIn, twitter, website }) => {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
@@ -33,10 +40,50 @@ export const Bio = ({ imageUrl, name, position, brief }) => {
         <CwraTreeIcon className={classes.medium} />
       </Avatar>
       <Typography variant="h6">{name}</Typography>
-      <Typography color="secondary" paragraph>
+      <Typography color="secondary">
         {position}
       </Typography>
-      <Typography paragraph align="center">
+
+      {/* socials */}
+      {(!!linkedIn || !!twitter || !!website) && (
+        <Stack direction="row" spacing={0.5}>
+          {!!linkedIn && (
+            <IconButton
+              aria-label="LinkedIn"
+              component="a"
+              href={linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="primary"
+            >
+              <LinkedInIcon color="primary" />
+            </IconButton>
+          )}
+          {!!twitter && (
+            <IconButton
+              aria-label="Twitter"
+              component="a"
+              href={twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TwitterIcon color="primary" />
+            </IconButton>
+          )}
+          {!!website && (
+            <IconButton
+              aria-label="Website"
+              component="a"
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <HttpIcon color="primary" />
+            </IconButton>
+          )}
+        </Stack>
+      )}
+      <Typography paragraph align="center" sx={{ my: 1 }}>
         {brief}
       </Typography>
     </Box>
