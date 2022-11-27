@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+/* eslint-disable react/jsx-props-no-spreading */
 import { SvgIcon } from '@mui/material';
 import { MpesaIcon as FullMpesaIcon } from './MpesaIcon';
 

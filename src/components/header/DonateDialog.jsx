@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import makeStyles from '@mui/styles/makeStyles';
 import {
   Typography,
@@ -113,12 +115,22 @@ export function DonateDialog({ open, onClose }) {
           paragraph
           className={classes.textHelpDialog}
         >
-          Have questions? <Link href="/contact-us">Get in touch</Link>
+          Have questions?
+          {' '}
+          <Link href="/contact-us">Get in touch</Link>
         </Typography>
       </DialogContent>
     </Dialog>
   );
 }
+DonateDialog.propTypes = {
+  open: PropTypes.bool,
+  onClose: PropTypes.func,
+};
+DonateDialog.defaultProps = {
+  open: false,
+  onClose: () => {},
+};
 
 export default function DonateButton() {
   const [openDonateDialog, setOpenDonateDialog] = useState(false);

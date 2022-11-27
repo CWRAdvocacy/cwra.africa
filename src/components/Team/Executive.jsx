@@ -1,4 +1,7 @@
-import { Grid, Container, Box, Typography } from '@mui/material';
+/* eslint-disable react/jsx-props-no-spreading */
+import {
+  Grid, Container, Box, Typography,
+} from '@mui/material';
 import { Bio } from './Bio';
 
 export const executiveTeam = [
@@ -23,11 +26,11 @@ export const executiveTeam = [
   },
 ];
 
-export const Executive = () => {
+export function Executive() {
   const teamBios = executiveTeam.map((member) => (
     <Grid item xs={12} sm={6} key={member.name}>
       <Box p={3}>
-        <Bio {...member}/>
+        <Bio {...member} />
       </Box>
     </Grid>
   ));
@@ -42,6 +45,6 @@ export const Executive = () => {
       </Container>
     </Box>
   );
-};
+}
 
 export default Executive;

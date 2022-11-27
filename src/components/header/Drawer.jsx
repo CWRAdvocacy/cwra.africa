@@ -1,7 +1,12 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
+
 import makeStyles from '@mui/styles/makeStyles';
-import { Drawer, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Drawer, List, ListItem, ListItemText,
+} from '@mui/material';
 
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -23,8 +28,8 @@ export default function MainDrawer(props) {
 
   const toggleDrawer = (openDrawer) => (event) => {
     if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      event.type === 'keydown'
+      && (event.key === 'Tab' || event.key === 'Shift')
     ) {
       return;
     }
@@ -55,21 +60,32 @@ export default function MainDrawer(props) {
     </div>
   );
 
-  return <>
-    {/* Button */}
-    <IconButton
-      color="inherit"
-      aria-label="open drawer"
-      onClick={toggleDrawer(true)}
-      edge="start"
-      className={clsx(classes.menuButton, props.className)}
-      size="large">
-      <MenuIcon />
-    </IconButton>
+  return (
+    <>
+      {/* Button */}
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        onClick={toggleDrawer(true)}
+        edge="start"
+        className={clsx(classes.menuButton, props.className)}
+        size="large"
+      >
+        <MenuIcon />
+      </IconButton>
 
-    {/* Drawer */}
-    <Drawer open={open} onClose={toggleDrawer(false)}>
-      {listLinks(props.links)}
-    </Drawer>
-  </>;
+      {/* Drawer */}
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {listLinks(props.links)}
+      </Drawer>
+    </>
+  );
 }
+
+MainDrawer.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  })).isRequired,
+  className: PropTypes.string.isRequired,
+};

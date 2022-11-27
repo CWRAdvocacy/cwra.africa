@@ -12,14 +12,16 @@ export default function TermsOfUsePage() {
 
       <Typography variant="body1" paragraph>
         At CWRA we supply a lot of different services. Some of them will have
-        specific terms tailored for them. If that is the case, CWRA's contract
+        specific terms tailored for them. If that is the case, CWRA&apos;s contract
         with you for that service will be on these terms, supplemented by any
         terms specific to the service. In the case of any conflict, service
         specific terms will take precedence.
       </Typography>
       <Typography variant="body1" paragraph>
-        We process personal data in accordance with our{' '}
-        <Link href="/privacy-policy">privacy policy</Link>. As part of this
+        We process personal data in accordance with our
+        {' '}
+        <Link href="/privacy-policy">privacy policy</Link>
+        . As part of this
         agreement you consent to our doing so. You should read the policy
         carefully, especially if you have any concerns about your privacy.
       </Typography>
@@ -79,14 +81,16 @@ export default function TermsOfUsePage() {
       <ul>
         <li>
           <Typography variant="body1">
-            We encourage the use of{' '}
+            We encourage the use of
+            {' '}
             <Link
               href="https://creativecommons.org/"
               target="_blank"
               rel="noreferrer noopener"
             >
               creative commons licences
-            </Link>{' '}
+            </Link>
+            {' '}
             but we cannot give any warranty that they will work in the way
             expected or should be used for any specific purpose. If in doubt,
             you should take your own legal advice.
@@ -164,7 +168,11 @@ export default function TermsOfUsePage() {
         <li>
           <Typography variant="body1">
             If asked for any personal details, you must answer truthfully (see
-            our <Link href="/privacy-policy">privacy policy</Link> for what we
+            our
+            {' '}
+            <Link href="/privacy-policy">privacy policy</Link>
+            {' '}
+            for what we
             do with those details). You must supply us with a valid e-mail
             address.
           </Typography>
@@ -280,7 +288,7 @@ export default function TermsOfUsePage() {
         to us.
       </Typography>
       <Typography variant="body1" paragraph>
-        If you have agreed to pay a sum at regular intervals ("payment periods")
+        If you have agreed to pay a sum at regular intervals (&quot;payment periods&quot;)
         then:
       </Typography>
       <ul>
@@ -293,7 +301,7 @@ export default function TermsOfUsePage() {
         <li>
           <Typography variant="body1">
             We may increase the price for the service by giving you at least one
-            payment period's notice of the new price.
+            payment period&apos;s notice of the new price.
           </Typography>
         </li>
       </ul>
@@ -442,7 +450,7 @@ export default function TermsOfUsePage() {
         control.
       </Typography>
       <Typography variant="body1" paragraph>
-        If for some reason beyond CWRA's reasonable control, we are unable to or
+        If for some reason beyond CWRA&apos;s reasonable control, we are unable to or
         it would not be commercially viable for us to, continue to supply any of
         our services, we may cease to supply that service, ending any agreement
         between us for its supply. If we do so, we will return to you a fair

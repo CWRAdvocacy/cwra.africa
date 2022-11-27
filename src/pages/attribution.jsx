@@ -15,15 +15,18 @@ export default function AttributionPage() {
         Icons
       </Typography>
       <Typography variant="body1" paragraph>
-        Icons displayed on our pages are licensed from{' '}
+        Icons displayed on our pages are licensed from
+        {' '}
         <Link
           href="https://thenounproject.com/"
           target="_blank"
           rel="noreferrer noopener"
         >
           The Noun Project
-        </Link>{' '}
-        under a{' '}
+        </Link>
+        {' '}
+        under a
+        {' '}
         <Link
           href="https://creativecommons.org/licenses/by/3.0/us/legalcode"
           target="_blank"
@@ -37,7 +40,8 @@ export default function AttributionPage() {
         Software
       </Typography>
       <Typography variant="body1" paragraph>
-        Technology at CWRA is built by{' '}
+        Technology at CWRA is built by
+        {' '}
         <Link
           href="https://davidlemayian.org"
           target="_blank"
@@ -71,7 +75,7 @@ export default function AttributionPage() {
         </Link>
         .
       </Typography>
-      <AttributionSponsors/>
+      <AttributionSponsors />
     </PageLayout>
   );
 }

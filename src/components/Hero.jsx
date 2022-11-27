@@ -5,11 +5,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Hidden  from '@mui/material/Hidden';
-
+import Hidden from '@mui/material/Hidden';
 
 export default function Hero() {
-
   return (
     <Box bgcolor="primary.main" color="white" pt={4} pb={4}>
       <Hidden mdDown>
