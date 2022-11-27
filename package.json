@@ -5,7 +5,7 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
-    "build": "ANALYZE=true next build && next export",
+    "build": "next build && next export",
     "deploy": "yarn build && yarn firebase deploy",
     "start": "next start",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
