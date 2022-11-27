@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable import/prefer-default-export */
 import { SvgIcon } from '@mui/material';
 
 export function MpesaIcon(props) {

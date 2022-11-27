@@ -165,13 +165,15 @@ export default function AboutPage() {
             <b>Community Engagement</b>
           </Typography>
           <Typography variant="body1" paragraph>
-            <u>Inter-generational dialogues</u>: We use these multi-demographic
+            <u>Inter-generational dialogues</u>
+            : We use these multi-demographic
             conversations that bring together young and old community members
             across age sets/groups to interrogate questions of culture and
             relevance in a non-antagonistic way.
           </Typography>
           <Typography variant="body1" paragraph>
-            <u>Mentorship platforms for girls</u>: We work with girls aged 7-18
+            <u>Mentorship platforms for girls</u>
+            : We work with girls aged 7-18
             through school and out- of-school programs to equip them with skills
             and capacity to engage in policy reform processes. Making sure their
             voices are included in defining solutions to FGM, teenage pregnancy,
@@ -186,13 +188,15 @@ export default function AboutPage() {
             <b>Advocacy</b>
           </Typography>
           <Typography variant="body1" paragraph>
-            <u>Public Interest Litigation</u>: Through class action matters or
+            <u>Public Interest Litigation</u>
+            : Through class action matters or
             strategic litigation - to challenge retrogressive institutional
             norms and contribute to the development of feminist jurisprudence at
             both national and African regional level.
           </Typography>
           <Typography variant="body1" paragraph>
-            <u>Media engagement</u>: Through collaborations - to engage a wider
+            <u>Media engagement</u>
+            : Through collaborations - to engage a wider
             audience and community of influencers.
           </Typography>
         </li>
@@ -213,13 +217,17 @@ function OurSecretariatAndBoard() {
         Our Secretariat
       </Typography>
       <Typography variant="body1" paragraph>
-        Meet members of CWRA's team
+        Meet members of CWRAs team
       </Typography>
       <ul>
         {executiveTeam.map((member, i) => (
+          // eslint-disable-next-line react/no-array-index-key
           <li key={i}>
             <Typography variant="body1">
-              <b>{member.name}</b> - {member.position}
+              <b>{member.name}</b>
+              {' '}
+              -
+              {member.position}
             </Typography>
             <Typography variant="body2" paragraph>
               {member.brief}
@@ -236,12 +244,18 @@ function OurSecretariatAndBoard() {
       </Typography>
       <ol>
         {boardBios.map((member, i) => (
+          // eslint-disable-next-line react/no-array-index-key
           <li key={i}>
             <Typography variant="body1">
-              <b>{member.fullName}</b> - {member.positionLong}
+              <b>{member.fullName}</b>
+              {' '}
+              -
+              {member.positionLong}
             </Typography>
             <Typography variant="body2" paragraph>
-              Current Job: {member.currentJob}
+              Current Job:
+              {' '}
+              {member.currentJob}
             </Typography>
           </li>
         ))}

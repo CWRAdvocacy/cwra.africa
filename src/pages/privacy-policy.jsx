@@ -6,14 +6,16 @@ export default function PrivacyPolicyPage() {
   return (
     <Layout title="Privacy Policy">
       <Typography variant="subtitle1" paragraph>
-        The Center for Women's Rights Advocacy is a not-for-profit organization.
+        The Center for Women&apos;s Rights Advocacy is a not-for-profit organization.
         It is incorporated in Kenya as a Non-Governmental Organization, with
         registration number OP.218/051/18-261/11206. VAT Registration
         P051928629X. Registered office address: Nairobi, Kenya.
       </Typography>
       <Typography variant="body1" paragraph>
         This policy describes our approach to your personal data. Contact
-        details can be found on the <Link href="/contact-us">contact page</Link>
+        details can be found on the
+        {' '}
+        <Link href="/contact-us">contact page</Link>
         . This privacy policy will be reviewed, and may be revised, from time to
         time. You may wish to revisit it regularly.
       </Typography>
@@ -28,7 +30,7 @@ export default function PrivacyPolicyPage() {
         retain user preferences, store information for things like shopping
         carts, and provide anonymised tracking data to third party applications
         like Google Analytics which we use to gather statistical data to help us
-        report on growth of our organization's followers to our funders.
+        report on growth of our organization&apos;s followers to our funders.
       </Typography>
       <Typography variant="body1" paragraph>
         We use two different types of cookies of our site:
@@ -41,18 +43,23 @@ export default function PrivacyPolicyPage() {
         improve performance and provide security to our sites. Without the
         installation of these cookies, our sites may either not run at all, or
         give very poor performance. Therefore these cookies are installed
-        automatically on your computer.{' '}
+        automatically on your computer.
+        {' '}
         <b>
           We cannot turn these cookies off, as they provide basic site
           functionality and security. To do so will prevent access to our
           service.
-        </b>{' '}
+        </b>
+        {' '}
         We use:
       </Typography>
       <ul>
         <li>
           <Typography variant="body1">
-            <b>__cfuid</b> - From{' '}
+            <b>__cfuid</b>
+            {' '}
+            - From
+            {' '}
             <Link
               href="https://www.cloudflare.com/"
               target="_blank"
@@ -110,8 +117,8 @@ export default function PrivacyPolicyPage() {
             <b>_collect</b>
           </Typography>
           <Typography variant="body1">
-            Google Analytic's _collect cookie is used to send data to Google
-            Analytics about the visitor's device and behaviour. It tracks the
+            Google Analytic&apos;s _collect cookie is used to send data to Google
+            Analytics about the visitor&apos;s device and behaviour. It tracks the
             visitor across devices and marketing channels, though we do not use
             the marketing, nor have any advertising on our sites. This cookie
             helps us understand who has visited our sites and which pages they
@@ -124,7 +131,7 @@ export default function PrivacyPolicyPage() {
             <b>_ga</b>
           </Typography>
           <Typography variant="body1">
-            Google Analytic's _ga cookie identifies unique users, unique
+            Google Analytic&apos;s _ga cookie identifies unique users, unique
             sessions, and can throttle the request rate if needed. In order for
             Google Analytics to determine that two distinct hits belong to the
             same user, a unique identifier, associated with that particular
@@ -138,7 +145,7 @@ export default function PrivacyPolicyPage() {
             <b>_gat</b>
           </Typography>
           <Typography variant="body1">
-            Google Analytic's _gat cookie does not store any user information,
+            Google Analytic&apos;s _gat cookie does not store any user information,
             it is just used to limit the number of requests made to
             doubleclick.net.
           </Typography>
@@ -148,7 +155,7 @@ export default function PrivacyPolicyPage() {
             <b>_gid</b>
           </Typography>
           <Typography variant="body1">
-            Google Analytic's _gid cookie is used to count and track pageviews
+            Google Analytic&apos;s _gid cookie is used to count and track pageviews
             anonymously.
           </Typography>
         </li>
@@ -183,14 +190,16 @@ export default function PrivacyPolicyPage() {
         consent request has been completed, you will need to do this manually in
         your browser settings by either enabling or disabling the cookies. We
         suggest consulting the Help section of your browser or taking a look at
-        the{' '}
+        the
+        {' '}
         <Link
           href="https://www.aboutcookies.org/how-to-control-cookies/"
           target="_blank"
           rel="noreferrer noopener"
         >
           About Cookies website
-        </Link>{' '}
+        </Link>
+        {' '}
         which offers guidance for all modern browsers.
       </Typography>
 
@@ -230,9 +239,10 @@ export default function PrivacyPolicyPage() {
         If you are uploading datasets for one of our surveys or to one of our
         database services, we request that you check the data and ensure full
         anonymisation, so that we remain GDPR compliant. We do not wish to
-        restrict a user's ability to provide datasets for public use, so please
+        restrict a user&apos;s ability to provide datasets for public use, so please
         upload data responsibly. If in any doubt, please contact us via the
-        <Link href="/contact-us">contact page</Link>.
+        <Link href="/contact-us">contact page</Link>
+        .
       </Typography>
 
       {/* Author Identification */}
@@ -303,7 +313,7 @@ export default function PrivacyPolicyPage() {
         problems with the site and, in cases of abuse of this site, to
         investigate the abuse. We use Google Analytics to gather data from
         cookies to analyse our website traffic in order to provide better
-        services and to set benchmarks for how we are doing in meeting CWRA's
+        services and to set benchmarks for how we are doing in meeting CWRA&apos;s
         goals. We have now implemented Google Analytics’ GDPR recommendations in
         order to ensure that we meet GDPR compliance. The main change is that we
         can no longer see the full IP number of a visitor, and so we cannot tell

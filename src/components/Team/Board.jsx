@@ -1,4 +1,6 @@
-import { Box, Container, Typography, Grid } from '@mui/material';
+import {
+  Box, Container, Typography, Grid,
+} from '@mui/material';
 import { Bio } from './Bio';
 
 export const boardBios = [
@@ -49,7 +51,7 @@ export const boardBios = [
   },
 ];
 
-const Board = () => {
+function Board() {
   const boardMembers = boardBios.slice(0, 5).map((member) => (
     <Grid item xs={6} sm={3} md={2} key={member.name}>
       <Bio name={member.name} position={member.position} />
@@ -68,6 +70,6 @@ const Board = () => {
       </Container>
     </Box>
   );
-};
+}
 
 export default Board;

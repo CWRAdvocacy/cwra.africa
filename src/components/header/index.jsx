@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import makeStyles from '@mui/styles/makeStyles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {
@@ -65,13 +67,20 @@ function AppBarLinks({ links }) {
   ));
 
   return (
-    <>
-      <List component="nav" className={classes.appBarLinksList}>
-        {linksList}
-      </List>
-    </>
+    <List component="nav" className={classes.appBarLinksList}>
+      {linksList}
+    </List>
   );
 }
+
+AppBarLinks.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default function ButtonAppBar() {
   const classes = useStyles();

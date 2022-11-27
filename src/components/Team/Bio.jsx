@@ -9,8 +9,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HttpIcon from '@mui/icons-material/Http';
 
-import CwraTreeIcon from '../icons/CwraTreeIcon';
 import { IconButton } from '@mui/material';
+import CwraTreeIcon from '../icons/CwraTreeIcon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,7 +32,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Bio = ({ imageUrl, name, position, brief, linkedIn, twitter, website }) => {
+export function Bio({
+  imageUrl, name, position, brief, linkedIn, twitter, website,
+}) {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
@@ -88,13 +90,16 @@ export const Bio = ({ imageUrl, name, position, brief, linkedIn, twitter, websit
       </Typography>
     </Box>
   );
-};
+}
 
 Bio.propTypes = {
   imageUrl: PropTypes.string,
   name: PropTypes.string,
   position: PropTypes.string,
   brief: PropTypes.string,
+  linkedIn: PropTypes.string,
+  twitter: PropTypes.string,
+  website: PropTypes.string,
 };
 
 Bio.defaultProps = {
@@ -102,6 +107,9 @@ Bio.defaultProps = {
   name: '',
   position: '',
   brief: '',
+  linkedIn: '',
+  twitter: '',
+  website: '',
 };
 
 export default Bio;

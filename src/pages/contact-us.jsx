@@ -55,9 +55,11 @@ function ContactList() {
   return (
     <ul>
       {list.map((element, i) => (
+        // eslint-disable-next-line react/no-array-index-key
         <li key={i}>
           <Typography variant="body1">
-            {element.label}:
+            {element.label}
+            :
             <Link href={element.url} target="_blank" rel="noopener noreferrer">
               {' '}
               {element.item}
