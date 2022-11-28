@@ -248,14 +248,16 @@ function OurSecretariatAndBoard() {
           <li key={i}>
             <Typography variant="body1">
               <b>{member.fullName}</b>
-              {' '}
-              -
+              {' - '}
               {member.positionLong}
             </Typography>
+            {member.expertise && (
+              <Typography variant="body1">
+                {member.expertise}
+              </Typography>
+            )}
             <Typography variant="body2" paragraph>
-              Current Job:
-              {' '}
-              {member.currentJob}
+              {`Current Job: ${member.currentJob}`}
             </Typography>
           </li>
         ))}

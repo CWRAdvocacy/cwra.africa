@@ -8,14 +8,16 @@ export const boardBios = [
     name: 'Suzanne',
     fullName: 'Suzanne Kidenda ',
     position: 'Chair',
-    positionLong: 'Board Chairperson (Mental Health Expert)',
+    positionLong: 'Board Chairperson',
+    expertise: 'Mental Health Expert',
     currentJob: 'Program Manager, Physicians for Human Rights, Kenya',
   },
   {
     name: 'Dr. Kamundia',
-    fullName: 'Board Member (Human Rights/Disability Rights Expert)',
+    fullName: 'Dr. Elizabeth Kamundia',
     position: 'Secretary',
-    positionLong: 'Board Member (Human Rights/Disability Rights Expert)',
+    positionLong: 'Board Member',
+    expertise: 'Human Rights/Disability Rights Expert',
     currentJob:
       'Assistant Director: Research, Advocacy and Outreach at the Kenya National Commission on Human Rights',
   },
@@ -23,7 +25,8 @@ export const boardBios = [
     name: 'Yiantet',
     fullName: 'Sylvia Yiantet',
     position: 'Member',
-    positionLong: 'Board Member (Legal/NPO systems expert)',
+    positionLong: 'Board Member',
+    expertise: 'Legal/NPO Systems Expert',
     currentJob: 'Programs Manager, Legal Resources Foundation.',
   },
   {
@@ -31,14 +34,16 @@ export const boardBios = [
     fullName: 'Teresia Naipano',
     position: 'Member',
     positionLong:
-      'Board Member. (Community engagement expert) Rural woman representing the interests of community women.',
+      'Board Member',
+    expertise: 'Community Engagement Expert. Rural woman representing the interests of community women.',
     currentJob: 'Subsistence farmer',
   },
   {
     name: 'Sintalo',
     fullName: 'Felistus Sintalo',
     position: 'Treasurer',
-    positionLong: 'Board Treasurer (Financial Systems Strategist)',
+    positionLong: 'Board Treasurer',
+    expertise: 'Financial Systems Strategist',
     currentJob:
       'Operations and Finance Manage at Shona Export Processing Zone Company',
   },
@@ -46,7 +51,7 @@ export const boardBios = [
     name: 'Dr. Ruth',
     fullName: 'Dr. Ruth Nekura',
     position: 'Secretary',
-    positionLong: 'Board Treasurer (Financial Systems Strategist)',
+    positionLong: 'Ex-Officio Member',
     currentJob: 'Co-founder CWRA',
   },
 ];

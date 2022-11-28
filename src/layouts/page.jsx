@@ -16,9 +16,7 @@ export default function PageLayout({ title, children }) {
     <BaseLayout>
       <Head>
         <title>
-          {title}
-          {' '}
-          - Center for Women&apos;s Rights Advocacy (CWRA)
+          {`${title} - Center for Women&apos;s Rights Advocacy (CWRA)`}
         </title>
       </Head>
       <Container maxWidth="md">
