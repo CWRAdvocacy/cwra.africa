@@ -225,8 +225,7 @@ function OurSecretariatAndBoard() {
           <li key={i}>
             <Typography variant="body1">
               <b>{member.name}</b>
-              {' '}
-              -
+              {' - '}
               {member.position}
             </Typography>
             <Typography variant="body2" paragraph>
