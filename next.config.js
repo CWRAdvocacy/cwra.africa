@@ -3,6 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  utput: 'export',
   trailingSlash: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
