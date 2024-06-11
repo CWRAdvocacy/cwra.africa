@@ -43,11 +43,11 @@ export default function AttributionPage() {
         Technology at CWRA is built by
         {' '}
         <Link
-          href="https://davidlemayian.org"
+          href="https://tenery.cc"
           target="_blank"
           rel="noreferrer noopener"
         >
-          David Lemayian
+          Tenery Research
         </Link>
         {' using '}
         <Link
